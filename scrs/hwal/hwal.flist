@@ -1,0 +1,6 @@
+#include ./Common/Common.flist
+#include ./services/services.flist
+
+#include ./McuDrv/McuDrv.flist
+
+#include ./boardAL/boardAL.flist
