@@ -47,7 +47,7 @@ PART = none
 
 # Application target name. Given with suffix .a for library and .elf for a
 # standalone application.
-TARGET_FLASH = blink_flash.elf
+TARGET_FLASH = awp.elf
 # TARGET_SRAM = getting-started_sram.elf
 
 BUILD_DIR = Output
@@ -62,46 +62,6 @@ PRINTF = printf
 RM = rm -f
 ROOT = ../..
 
-# List of C source files.
-#CSRCS = sources/bsw/Startup/sam3x8/startup_sam3x.c						\
-#		sources/bsw/Startup/Startup.c									\
-#		sources/bsw/SrvL/SysSrv/sysclk.c								\
-#		sources/bsw/Global/stdio/read.c									\
-#		sources/bsw/Global/stdio/write.c								\
-#		sources/bsw/EcuAL/OnBrdA/BoardConf/init.c						\
-#		sources/bsw/McAL/IoDrv/pio/pio.c								\
-#		sources/bsw/McAL/IoDrv/pio/pio_handler.c						\
-#		sources/bsw/McAL/McDrv/Mcu/interrupt/interrupt_sam_nvic.c		\
-#		sources/bsw/McAL/McDrv/Mcu/pmc/pmc.c							\
-#		sources/bsw/McAL/McDrv/Mcu/pmc/sleep.c							\
-#		sources/bsw/McAL/McDrv/Mcu/cmsis/source/templates/exceptions.c	\
-#		sources/bsw/McAL/McDrv/Mcu/system_sam3x.c 	\
-#		sources/bsw/McAL/McDrv/Systick/Systick.c			\
-#		sources/bsw/McAL/ComDrv/uart/uart.c                            \
-#		sources/bsw/McAL/ComDrv/usart/usart.c                          \
-#		sources/bsw/Global/syscalls/gcc/syscalls.c 	\
-#		sources/rte/rte.c
-#		
-#
-#
-#CSRCS += \
-#		sources/bsw/McAL/McDrv/Mcu/mcu_Cfg.c	\
-#		sources/bsw/McAL/McDrv/Wdg/wdg.c        \
-#		sources/bsw/McAL/McDrv/Wdg/Wdg_Lcfg.c 	\
-#		sources/bsw/McAL/ComDrv/spi/SAM_driver/Spi_sam.c	\
-#		sources/bsw/McAL/ComDrv/spi/SAM_driver/Spi_atmel_lib.c	\
-#		sources/bsw/McAL/ComDrv/spi/SAM_driver/dmac_atmel_lib.c	\
-#		sources/bsw/McAL/ComDrv/spi/spi.c	\
-#		sources/bsw/EcuAL/MemA/Ext_Fls/src/Spi_PbCfg.c				 \
-#		sources/bsw/EcuAL/MemA/Ext_Fls/src/Fls_Ext.c		\
-#		sources/bsw/McAL/MemDrv/Fls/src/Fls.c	\
-#		sources/comps/Adc_UnitTest/Adc_UnitTest.c	\
-#		sources/bsw/McAL/IoDrv/adc/Adc.c	\
-#		sources/bsw/McAL/IoDrv/adc/Adc_PbCfg.c
-##		sources/bsw/McAL/McDrv/Mcu/mcu.c
-##		sources/comps/Spi_UnitTest/Spi_PbCfg.c		\
-##		sources/comps/Spi_UnitTest/Spi_UnitTest.c
-##		sources/bsw/EcuAL/ComA/SerialDebuger/usart_serial.c	\
 
 include $(FILELIST_MK)
 

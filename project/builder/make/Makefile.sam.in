@@ -244,7 +244,7 @@ cppflags-gnu-y  += $(foreach INC,$(addprefix $(PRJ_PATH)/,$(INC_PATH)),-I$(INC))
 asflags-gnu-y   += $(foreach INC,$(addprefix $(PRJ_PATH)/,$(INC_PATH)),'-Wa,-I$(INC)')
 
 # CPU specific flags.
-cpuflags-gnu-y  += -mcpu=$(ARCH) -mthumb -D=__$(PART)__
+cpuflags-gnu-y  += -mcpu=$(ARCH) -mthumb -D=__$(PART)__ -Wl,--unresolved-symbols=report-all -Wl,--warn-common -Wl,--warn-section-align -Wl,--warn-unresolved-symbols
 
 # Dependency file flags.
 depflags        = -MD -MP -MQ $@

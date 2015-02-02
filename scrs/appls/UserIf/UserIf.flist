@@ -18,3 +18,5 @@
 
 ./UserIf.h
 ./UserIf.c
+
+#include ./mainproc/mainproc.flist

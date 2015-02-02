@@ -16,5 +16,7 @@ void UserIf_Input_main(void);
 
 void UserIf_Ouput_main(void);
 
+void UserIf_Proc_main(void);
+
 void UserIf_OuputLow_main(void);
 #endif /* USERIF_H_ */
