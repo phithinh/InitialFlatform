@@ -223,7 +223,7 @@ void main_set_activation_hour_v()
 		{
 			main_set_act_hour = 0;
 		}
-		t_acttime_uw = DataCollection_read_bk1_v();
+		t_acttime_uw = DataCollection_read_bk1_v()&0x00FF;
 		t_acttime_uw |= (main_set_act_hour << 8);
 		DataCollection_set_bk1_v(t_acttime_uw);
 		sprintf(main_cmd_bot, "%d : %d", main_set_act_hour, main_set_act_min);
@@ -254,7 +254,7 @@ void main_set_activation_min_v()
 		{
 			main_set_act_min = 0;
 		}
-		t_acttime_uw = DataCollection_read_bk1_v();
+		t_acttime_uw = DataCollection_read_bk1_v()&0xFF00;
 		t_acttime_uw |= main_set_act_min;
 		DataCollection_set_bk1_v(t_acttime_uw);
 		sprintf(main_cmd_bot, "%d : %d", main_set_act_hour, main_set_act_min);
@@ -370,7 +370,7 @@ void main_set_duration_min_v()
 		{
 			main_set_dur_min = 0;
 		}
-		t_durtime_uw = DataCollection_read_bk2_v();
+		t_durtime_uw = DataCollection_read_bk2_v()&0x00FF;
 		t_durtime_uw |= (main_set_dur_min << 8);
 		DataCollection_set_bk2_v(t_durtime_uw);
 		sprintf(main_cmd_bot, "%d : %d", main_set_dur_min, main_set_dur_sec);
@@ -400,7 +400,7 @@ void main_set_duration_sec_v()
 		{
 			main_set_dur_sec = 0;
 		}
-		t_durtime_uw = DataCollection_read_bk2_v();
+		t_durtime_uw = DataCollection_read_bk2_v()&0xFF00;
 		t_durtime_uw |= main_set_dur_sec;
 		DataCollection_set_bk2_v(t_durtime_uw);
 		sprintf(main_cmd_bot, "%d : %d", main_set_dur_min, main_set_dur_sec);

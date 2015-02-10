@@ -8,6 +8,6 @@
 #ifndef RTC_CFG_H_
 #define RTC_CFG_H_
 
-
+#define USE_LSE
 
 #endif /* RTC_CFG_H_ */

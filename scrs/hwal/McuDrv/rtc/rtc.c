@@ -12,6 +12,7 @@
 #include <misc.h>
 
 #include <rtc.h>
+#include "rtc_cfg.h"
 
 const u8 *COMPILED_DATE=__DATE__;//get the date of compilation
 const u8 *COMPILED_TIME=__TIME__;//get compile time
