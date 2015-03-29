@@ -36,16 +36,9 @@ typedef struct {
 
 //output
 typedef enum{
-	RELAY1 =0     ,
-	RELAY2      ,
-	RELAY3      ,
-	LED_OUT1    ,
+	LED_OUT1  =0  ,
 	LED_OUT2    ,
 	LED_OUT3    ,
-	OLED_CS     ,
-	OLED_DC     ,
-//	OLED_MOSI   ,
-//	OLED_CLK    ,
 	NUMBER_DIGITAL_OUT
 }GPIO_OUT_PINNAME;
 
@@ -65,26 +58,12 @@ typedef enum{
  * */
 const GPIO_CONFIG_ST digital_out_config_st[NUMBER_DIGITAL_OUT] = {
 
-			{GPIOA,
-					GPIO_Pin_15},
 			{GPIOB,
-					GPIO_Pin_3},
-			{GPIOB,
-					GPIO_Pin_4},
-			{GPIOA,
 					GPIO_Pin_0},
-			{GPIOA,
+			{GPIOB,
 					GPIO_Pin_1},
-			{GPIOA,
-					GPIO_Pin_2},
-			{GPIOB,
-					GPIO_Pin_10},
-			{GPIOB,
-					GPIO_Pin_11},
-//			{GPIOB,
-//					GPIO_Pin_14},
-//			{GPIOB,
-//					GPIO_Pin_12}
+			{GPIOC,
+					GPIO_Pin_13},
 };
 #endif
 #undef __GPIO_DIGITAL_OUT_DRV
@@ -104,12 +83,12 @@ const GPIO_CONFIG_ST digital_out_config_st[NUMBER_DIGITAL_OUT] = {
  * @Digital input pin configurations
  * */
 const GPIO_CONFIG_ST digital_in_config_st[NUMBER_DIGITAL_IN] = {
-	{GPIOA,
+	{GPIOC,
 			GPIO_Pin_9},
-	{GPIOA,
-			GPIO_Pin_10},
-	{GPIOA,
-			GPIO_Pin_11},
+	{GPIOB,
+			GPIO_Pin_8},
+	{GPIOB,
+			GPIO_Pin_9},
 };
 #endif
 

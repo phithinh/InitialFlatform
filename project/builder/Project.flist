@@ -1,5 +1,5 @@
-#include scrs/appls/appls.flist
-#include scrs/hwal/hwal.flist
+#include InitialPlatform/scrs/appls/appls.flist
+#include InitialPlatform/scrs/hwal/hwal.flist
 
-#include scrs/libs/libs.flist
-#include scrs/rte/rte.flist
+#include InitialPlatform/scrs/libs/libs.flist
+#include InitialPlatform/scrs/rte/rte.flist

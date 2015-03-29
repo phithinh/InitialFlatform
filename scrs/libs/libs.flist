@@ -69,7 +69,7 @@
 ./_FreeRTOS/timers.c
 
 
-./CMSIS/CM3/CoreSupport/core_cm3.h
+;./CMSIS/CM3/CoreSupport/core_cm3.h
 ./CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h
 
 ./stm32f10x_conf.h

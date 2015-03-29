@@ -1,6 +1,9 @@
 #ifndef UART_PUB_H_
 #define UART_PUB_H_
 
+#include <stm32f10x.h>
+#include <stm32f10x_usart.h>
+
 typedef struct{
 	void (* RX_indication)(UBYTE);
 }UART_HW_CONFIG_ST_DEF;

@@ -60,7 +60,7 @@ INC_DIR = ../../../project/includes
 FILELIST_MK = ../filelist.mk
 PRINTF = printf
 RM = rm -f
-ROOT = ../..
+ROOT = ../../..
 
 
 include $(FILELIST_MK)
