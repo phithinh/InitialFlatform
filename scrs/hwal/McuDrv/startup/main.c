@@ -51,14 +51,14 @@ static void vMCU_Init_Hardware( void )
 	/* Init system clock */
 //	SystemInit();
 	/* Set the Vector Table base address at 0x08000000 */
-	NVIC_SetVectorTable( NVIC_VectTab_FLASH, 0x0 );
-	NVIC_PriorityGroupConfig( NVIC_PriorityGroup_4 );
+	//NVIC_SetVectorTable( NVIC_VectTab_FLASH, 0x0 );
+	//NVIC_PriorityGroupConfig( NVIC_PriorityGroup_4 );
 	/* Configure HCLK clock as SysTick clock source. */
 	SysTick_CLKSourceConfig( SysTick_CLKSource_HCLK );
 
 	digital_out_init_v();
 	digital_in_init_v();
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
-	GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE);
+	//RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
+	//GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE);
 	environment_init_v();
 }

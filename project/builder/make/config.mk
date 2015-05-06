@@ -37,7 +37,7 @@
 #
 
 # Path to top level ASF directory relative to this project directory.
-PRJ_PATH = ../../..
+PRJ_PATH = ../../../..
 
 # Target CPU architecture: cortex-m3, cortex-m4
 ARCH = cortex-m3
@@ -66,10 +66,10 @@ ROOT = ../../..
 include $(FILELIST_MK)
 
 # List of assembler source files.
-ASSRCS = scrs/hwal/McuDrv/startup/startup_stm32f10x_md_freertos.S
+ASSRCS = InitialPlatform/scrs/hwal/McuDrv/startup/startup_stm32f10x_md_freertos.S
 
 # List of include paths.
-INC_PATH = project/includes               
+INC_PATH = InitialPlatform/project/includes               
 
 # Additional search paths for libraries.
 LIB_PATH =  \
@@ -80,7 +80,7 @@ LIB_PATH =  \
 LIBS =  
 
 # Path relative to top level directory pointing to a linker script.
-LINKER_SCRIPT_FLASH = project/builder/linker/STM32F103-MD.ld
+LINKER_SCRIPT_FLASH = InitialPlatform/project/builder/linker/STM32F103-MD.ld
 LINKER_SCRIPT_SRAM  = 
 
 # Path relative to top level directory pointing to a linker script.

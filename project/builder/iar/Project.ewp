@@ -39,20 +39,20 @@
         <option>
           <name>Input variant</name>
           <version>3</version>
-          <state>1</state>
+          <state>7</state>
         </option>
         <option>
           <name>Input description</name>
-          <state>Full formatting.</state>
+          <state>No specifier n, no float nor long long, no scan set, no assignment suppressing, without multibyte support.</state>
         </option>
         <option>
           <name>Output variant</name>
           <version>2</version>
-          <state>1</state>
+          <state>7</state>
         </option>
         <option>
           <name>Output description</name>
-          <state>Full formatting.</state>
+          <state>No specifier a, A, no specifier n, no float nor long long, no flags.</state>
         </option>
         <option>
           <name>GOutputBinary</name>
@@ -87,7 +87,7 @@
         </option>
         <option>
           <name>OGLastSavedByProductVersion</name>
-          <state>6.70.3.6347</state>
+          <state>7.10.3.6927</state>
         </option>
         <option>
           <name>GeneralEnableMisra</name>
@@ -163,7 +163,7 @@
       <name>ICCARM</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>29</version>
+        <version>31</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -231,7 +231,7 @@
         <option>
           <name>CCAllowList</name>
           <version>1</version>
-          <state>0000000</state>
+          <state>00000000</state>
         </option>
         <option>
           <name>CCDebugInfo</name>
@@ -263,7 +263,7 @@
         </option>
         <option>
           <name>CCRequirePrototypes</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>CCMultibyteSupport</name>
@@ -299,7 +299,7 @@
         </option>
         <option>
           <name>CCIncludePath2</name>
-          <state>D:\Workspace\InitialPlatform_Iar\InitialPlatform\project\includes</state>
+          <state>$PROJ_DIR$\..\..\includes</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -319,7 +319,7 @@
         </option>
         <option>
           <name>CCOptLevel</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>CCOptStrategy</name>
@@ -328,7 +328,7 @@
         </option>
         <option>
           <name>CCOptLevelSlave</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>CompilerMisraRules98</name>
@@ -399,6 +399,15 @@
         <option>
           <name>CCNoLiteralPool</name>
           <state>0</state>
+        </option>
+        <option>
+          <name>CCOptStrategySlave</name>
+          <version>0</version>
+          <state>0</state>
+        </option>
+        <option>
+          <name>CCGuardCalls</name>
+          <state>1</state>
         </option>
       </data>
     </settings>
@@ -704,7 +713,7 @@
         </option>
         <option>
           <name>IlinkIcfFile</name>
-          <state>$PROJ_DIR$\icfFile\stm32f103x8_FWNonBoot.icf</state>
+          <state>$PROJ_DIR$\icfFile\stm32f103xC.icf</state>
         </option>
         <option>
           <name>IlinkIcfFileSlave</name>
@@ -1033,13 +1042,13 @@
           <name>$PROJ_DIR$\..\..\..\scrs\hwal\services\OS\OS_Layer.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\scrs\libs\_FreeRTOS\portable\IAR\ARM_CM3\port.c</name>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\services\OS\port.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\scrs\libs\_FreeRTOS\portable\IAR\ARM_CM3\portasm.s</name>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\services\OS\portasm.s</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\scrs\libs\_FreeRTOS\portable\IAR\ARM_CM3\portmacro.h</name>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\services\OS\portmacro.h</name>
         </file>
       </group>
     </group>
@@ -1103,9 +1112,6 @@
         <name>CM3</name>
         <group>
           <name>CoreSupport</name>
-          <file>
-            <name>$PROJ_DIR$\..\..\..\scrs\libs\CMSIS\CM3\CoreSupport\core_cm3.c</name>
-          </file>
           <file>
             <name>$PROJ_DIR$\..\..\..\scrs\libs\CMSIS\CM3\CoreSupport\core_cm3.h</name>
           </file>
