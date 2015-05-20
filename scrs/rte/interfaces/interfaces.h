@@ -7,16 +7,9 @@
 
 #ifndef INTERFACES_H_
 #define INTERFACES_H_
-#include "p_adc_values.h"
-#include "p_button_status.h"
-#include "p_relay_status.h"
-#include "p_time.h"
-#include "p_rx_serial.h"
+#include "p_com_tx.h"
 
-extern BUTTON_STATUS_ST	*global_button_status_pst;
-extern RELAY_STATUS_ST 	*global_relay_status_pst;
-extern ADC_VALUES_ST 	*global_adc_values_pst;
-extern DEF_TIME_ST		*global_time_pst;
-extern DATACOLLECTION_RX_SERIAL_ST_DEF *global_DataCollection_rx_serial_pst;
+extern NET_TX_DATA_REQUEST_TDEF net_tx_data_request_st;
+extern NET_TX_CTR_REQUEST_TDEF net_tx_ctr_request_st;
 
 #endif /* INTERFACES_H_ */

@@ -21,9 +21,6 @@
 
 #include <stm32f10x_rcc.h>
 
-#include <digital_out_pub.h>
-#include <digital_in_pub.h>
-
 
 /* Prototype static function main source use */
 static void vMCU_Init_Hardware( void );
@@ -55,9 +52,6 @@ static void vMCU_Init_Hardware( void )
 	//NVIC_PriorityGroupConfig( NVIC_PriorityGroup_4 );
 	/* Configure HCLK clock as SysTick clock source. */
 	SysTick_CLKSourceConfig( SysTick_CLKSource_HCLK );
-
-	digital_out_init_v();
-	digital_in_init_v();
 	//RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
 	//GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE);
 	environment_init_v();

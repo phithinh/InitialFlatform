@@ -8,7 +8,8 @@
 #ifndef UART_CFG_H_
 #define UART_CFG_H_
 
-#define COMn			1
+//#define COM_RX_INT
+#define COMn			3
 #define COM_SELECT_ID	COM1
 #define COM_SELECT_BASE	USART_COM1
 

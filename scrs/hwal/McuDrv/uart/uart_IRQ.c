@@ -13,7 +13,7 @@
 #include "uart_pub.h"
 
 extern UART_HW_CONFIG_ST_DEF uart_Hw_Cofig_st;
-
+void USART1_IRQHandler(void);
 
 void USART1_IRQHandler(void)
 {

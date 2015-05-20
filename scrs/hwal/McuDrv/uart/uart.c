@@ -7,9 +7,6 @@
 #include "uart_cfg.h"
 #include "uart_pub.h"
 
-#define COM_RX_INT
-
-
 USART_TypeDef* COM_USART[COMn] = {USART_COM1, USART_COM2, USART_COM3}; 
 
 GPIO_TypeDef* COM_TX_PORT[COMn] = {USART_COM1_TX_GPIO_PORT, USART_COM2_TX_GPIO_PORT, USART_COM3_TX_GPIO_PORT};

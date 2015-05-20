@@ -11,6 +11,6 @@
 void RS485_ReadEnable(void);
 void RS485_SendEnable(void);
 void RS485_init_v(void);
-void RS485_send_v(UBYTE* p_ch_ub,UBYTE lenght);
+UBYTE RS485_send_v(UBYTE p_ch_ub);
 
 #endif /* RS485_H_ */

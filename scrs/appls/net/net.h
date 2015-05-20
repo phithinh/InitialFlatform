@@ -9,10 +9,8 @@
 #define NET_H_
 #include <interfaces.h>
 
-void net_T1_process_v(button_status_tst*	p_button_status_st,
-						adc_values_tst* 	p_adc_values_st);
-void net_T10_process_v(button_status_tst*	p_button_status_st,
-						adc_values_tst* 	p_adc_values_st);
+void net_init_v(void);
+void net_background_v(void);
 
 
 #endif /* NET_H_ */

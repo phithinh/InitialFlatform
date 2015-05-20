@@ -26,15 +26,11 @@ void RS485_init_v(void){
 	RS485_ReadEnable();
 	USART_init_v();
 }
-
-void RS485_send_v(UBYTE* p_ch_ub,UBYTE lenght){
-//	UBYTE t_iloop_ub;
-//	RS485_SendEnable();
-//	for(t_iloop_ub = 0;t_iloop_ub<lenght;t_iloop_ub++){
-//		USART_SendData(COM_SELECT_BASE, (uint8_t) *(p_ch_ub+t_iloop_ub));
-//		/* Loop until the end of transmission */
-//		while (USART_GetFlagStatus(COM_SELECT_BASE, USART_FLAG_TC ) == RESET)
-//		{}
-//	}
-//	RS485_ReadEnable();
+UBYTE RS485_send_v(UBYTE p_ch_ub){
+	if (USART_GetFlagStatus(COM_SELECT_BASE, USART_FLAG_TC ) == SET){
+		USART_SendData(COM_SELECT_BASE, (uint8_t) p_ch_ub);
+		return 1;
+	} else {
+		return 0;
+	}
 }

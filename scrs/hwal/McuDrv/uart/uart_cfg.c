@@ -10,5 +10,5 @@
 #include "uart_pub.h"
 
 UART_HW_CONFIG_ST_DEF uart_Hw_Cofig_st = {
-	.RX_indication = &serial_RX_IRQHandler
+	.RX_indication = 0
 };

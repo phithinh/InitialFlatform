@@ -3,6 +3,7 @@
 
 #include <stm32f10x.h>
 #include <stm32f10x_usart.h>
+#include "uart_cfg.h"
 
 typedef struct{
 	void (* RX_indication)(UBYTE);

@@ -1,1 +1,17 @@
-#include ./OledLCD/OLED.flist
+./SVPWM/SVPWM.c       ::::::::
+./SVPWM/SVPWM.h       ::::::::
+
+./ADC_DMA/ADC_DMA.c   ::::::::
+./ADC_DMA/ADC_DMA.h ::::::::
+
+./FlashRW/FlashRW.c    ::::::::
+./FlashRW/FlashRW.h    ::::::::
+./FlashRW/MemoryMap.h  ::::::::
+
+;./serial_com/receiver/receiver.c	
+./serial_com/RS485/RS485.c	
+./serial_com/RS485/RS485.h
+;./serial_com/transporter/transporter.c
+;./serial_com/transporter/transporter.h
+./serial_com/serial_cbk.h
+./serial_com/serial_com.h

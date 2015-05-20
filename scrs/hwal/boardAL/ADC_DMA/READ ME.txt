@@ -1,0 +1,7 @@
+1. Su dung DMA doc 6 chanel Analog : 0 - 1 - 2 -3 - 8 - 9.
+2. Config cho DMA va dia chi tro den RAM de luu tru data.
+3. Config ADC rank tu 1->6.
+4. Khi chay chuong trinh thi data tu dong tu` DMA cap nhat vao DMA_Analog_Buffer[NumOfChanel];
+5. Su dung ham ReadAnalogInput() de convert data tu 32-->16 va store data vao StrAnalog. Ham nay tra ve
+dia chi cua StrAnalog - Neu cac layer khac muon truy xuat co the dung memcpy() ghi dia chi vao 1 buffer khac.
+6. Hoac goi ham ReadAnalogInput() roi` extern StrAnalog ra de su dung.

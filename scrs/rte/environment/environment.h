@@ -9,10 +9,7 @@
 #define ENVIRONMENT_H_
 
 void environment_init_v(void);
-//void environment_loop_v(void);
-
-//void environment_T1_process_v(void);
-void environment_T10_process_v(void);
-void environment_T10Low_process_v(void);
+void environment_T10_v(void);
+void environment_background_v(void);
 
 #endif /* ENVIRONMENT_H_ */

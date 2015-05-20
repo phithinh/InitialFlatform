@@ -3,3 +3,4 @@
 #include ./gpio/gpio.flist
 
 #include ./startup/startup.flist
+#include ./uart/uart.flist

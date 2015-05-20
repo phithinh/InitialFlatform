@@ -168,7 +168,7 @@
         <debug>0</debug>
         <option>
           <name>CCDefines</name>
-          <state>STM32F10X_MD_VL</state>
+          <state>STM32F10X_MD</state>
           <state>USE_STDPERIPH_DRIVER</state>
           <state>HSE_VALUE=8000000</state>
         </option>
@@ -947,11 +947,107 @@
   </configuration>
   <group>
     <name>appls</name>
+    <group>
+      <name>inverter</name>
+      <group>
+        <name>inv_com</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\appls\inverter\inv_com\inv_com.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\appls\inverter\inv_com\inv_com.h</name>
+        </file>
+      </group>
+      <group>
+        <name>inv_ctr</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\appls\inverter\inv_ctr\inverter_controller.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\appls\inverter\inv_ctr\inverter_controller_adapts.h</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\appls\inverter\inv_ctr\inverter_controller_cfg.h</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\appls\inverter\inv_ctr\inverter_controller_pri.h</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\appls\inverter\inv_ctr\inverter_controller_pub.h</name>
+        </file>
+      </group>
+      <file>
+        <name>$PROJ_DIR$\..\..\..\scrs\appls\inverter\inverter_adpts.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\..\..\scrs\appls\inverter\inverter_main.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\..\..\scrs\appls\inverter\inverter_main.h</name>
+      </file>
+    </group>
+    <group>
+      <name>net</name>
+      <file>
+        <name>$PROJ_DIR$\..\..\..\scrs\appls\net\net.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\..\..\scrs\appls\net\net.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\..\..\scrs\appls\net\net_adpts.h</name>
+      </file>
+    </group>
   </group>
   <group>
     <name>hwal</name>
     <group>
       <name>boardAL</name>
+      <group>
+        <name>ADC-DMA</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\boardAL\ADC_DMA\ADC_DMA.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\boardAL\ADC_DMA\ADC_DMA.h</name>
+        </file>
+      </group>
+      <group>
+        <name>FlashRW</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\boardAL\FlashRW\FlashRW.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\boardAL\FlashRW\FlashRW.h</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\boardAL\FlashRW\MemoryMap.h</name>
+        </file>
+      </group>
+      <group>
+        <name>serial_com</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\boardAL\serial_com\RS485\RS485.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\boardAL\serial_com\RS485\RS485.h</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\boardAL\serial_com\serial_cbk.h</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\boardAL\serial_com\serial_com.h</name>
+        </file>
+      </group>
+      <group>
+        <name>SVPWM</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\boardAL\SVPWM\SVPWM.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\boardAL\SVPWM\SVPWM.h</name>
+        </file>
+      </group>
     </group>
     <group>
       <name>Common</name>
@@ -1005,6 +1101,9 @@
         <file>
           <name>$PROJ_DIR$\..\..\..\scrs\hwal\McuDrv\gpio\gpio_hardware_config.h</name>
         </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\McuDrv\gpio\gpio_pub.h</name>
+        </file>
       </group>
       <group>
         <name>startup</name>
@@ -1020,6 +1119,21 @@
       </group>
       <group>
         <name>uart</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\McuDrv\uart\uart.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\McuDrv\uart\uart_cfg.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\McuDrv\uart\uart_cfg.h</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\McuDrv\uart\uart_IRQ.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\McuDrv\uart\uart_pub.h</name>
+        </file>
       </group>
     </group>
     <group>
@@ -1210,6 +1324,15 @@
           <name>$PROJ_DIR$\..\..\..\scrs\libs\STM32F10x_StdPeriph_Driver\src\misc.c</name>
         </file>
         <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\libs\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\libs\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\libs\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\..\..\scrs\libs\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c</name>
         </file>
         <file>
@@ -1253,19 +1376,7 @@
         <name>$PROJ_DIR$\..\..\..\scrs\rte\interfaces\interfaces.h</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\..\..\scrs\rte\interfaces\p_adc_values.h</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\scrs\rte\interfaces\p_button_status.h</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\scrs\rte\interfaces\p_relay_status.h</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\scrs\rte\interfaces\p_rx_serial.h</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\scrs\rte\interfaces\p_time.h</name>
+        <name>$PROJ_DIR$\..\..\..\scrs\rte\interfaces\p_com_tx.h</name>
       </file>
     </group>
     <group>

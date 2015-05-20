@@ -8,9 +8,30 @@
 #ifndef LED_HARDWARD_CONFIG_H_
 #define LED_HARDWARD_CONFIG_H_
 
-#include <compiler.h>
-#include <stm32f10x_gpio.h>
+//gpio_pinName
 
+//output
+typedef enum{
+	LED1 = 0   ,
+	LED2       ,
+	LED3       ,
+	RELAY      ,
+	IGBT_SD_OUT,
+	RS485_DIR,
+	NUMBER_DIGITAL_OUT
+}GPIO_OUT_PINNAME;
+
+//input
+typedef enum{
+	DIPSW1    =0,
+	DIPSW2    ,
+	BTN1      ,
+	BTN2      ,
+	IGBT_SD_IN,
+	NUMBER_DIGITAL_IN
+}GPIO_IN_PINNAME;
+
+#if	defined(__GPIO_DIGITAL_OUT_DRV) || defined(__GPIO_DIGITAL_IN_DRV)
 typedef struct {
 	GPIO_TypeDef * gpio_type_def; //GPIOA,GPIOB,GPIOC,GPIOD,GPIOE,
 								  //GPIOF,GPIOG
@@ -26,30 +47,11 @@ typedef struct {
 							//EXTI_Trigger_Falling = 0x0C,  
 							//EXTI_Trigger_Rising_Falling = 0x10
 } EXTI_CONFIG_ST;
-
+#endif
 //------------------------------------------------------------------
 //------------------------------------------------------------------
 //User hardware definition for DIGITAL_OUT
 //
-
-//gpio_pinName
-
-//output
-typedef enum{
-	LED_OUT1  =0  ,
-	LED_OUT2    ,
-	LED_OUT3    ,
-	NUMBER_DIGITAL_OUT
-}GPIO_OUT_PINNAME;
-
-//input
-typedef enum{
-	BUTTON1 = 0,
-	BUTTON2,
-	BUTTON3,
-	NUMBER_DIGITAL_IN
-}GPIO_IN_PINNAME;
-
 
 #ifdef __GPIO_DIGITAL_OUT_DRV
 
@@ -59,11 +61,17 @@ typedef enum{
 const GPIO_CONFIG_ST digital_out_config_st[NUMBER_DIGITAL_OUT] = {
 
 			{GPIOB,
-					GPIO_Pin_0},
+					GPIO_Pin_4},
 			{GPIOB,
-					GPIO_Pin_1},
-			{GPIOC,
-					GPIO_Pin_13},
+					GPIO_Pin_3},
+			{GPIOA,
+					GPIO_Pin_15},
+			{GPIOB,
+					GPIO_Pin_12},
+			{GPIOA,
+					GPIO_Pin_3},
+			{GPIOB,
+					GPIO_Pin_9},
 };
 #endif
 #undef __GPIO_DIGITAL_OUT_DRV
@@ -83,12 +91,16 @@ const GPIO_CONFIG_ST digital_out_config_st[NUMBER_DIGITAL_OUT] = {
  * @Digital input pin configurations
  * */
 const GPIO_CONFIG_ST digital_in_config_st[NUMBER_DIGITAL_IN] = {
-	{GPIOC,
-			GPIO_Pin_9},
+	{GPIOB,
+			GPIO_Pin_5},
+	{GPIOB,
+			GPIO_Pin_6},
 	{GPIOB,
 			GPIO_Pin_8},
 	{GPIOB,
-			GPIO_Pin_9},
+			GPIO_Pin_7},
+	{GPIOA,
+			GPIO_Pin_2},
 };
 #endif
 

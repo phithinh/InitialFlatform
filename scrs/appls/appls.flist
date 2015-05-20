@@ -1,2 +1,2 @@
-#include ./UserIf/UserIf.flist
-#include ./DataCollection/DataCollection.flist
+#include ./inverter/inverter.flist
+#include ./net/net.flist

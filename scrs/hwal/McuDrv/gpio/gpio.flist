@@ -8,3 +8,5 @@
 
 ./digital_in/digital_in_pub.h
 ./digital_in/digital_in.c	
+
+./gpio_pub.h

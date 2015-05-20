@@ -1,0 +1,7 @@
+-	Init Hardware
+-	Dead time
+-	Hien gio dang su dung Excel tinh toan ra gia tri roi tra bang
+-	Mode chay bang cach tinh dang rot vao Hard Fault
+-	Cac gia tri nhap truc tiep chua co cong thuc qui doi
+-	Tuong tac truc tiep vao module SVPWM wa struct SVPWM
+-	Cac gia tri tinh toan tham khao trong file excel
