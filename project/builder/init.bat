@@ -17,4 +17,4 @@ set PATH=%CYGWIN_PATH%;%PATH%
 cd %Cr_PATH%\make
 echo Creating header file
 make header
-pause
+REM pause

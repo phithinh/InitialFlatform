@@ -5,7 +5,7 @@
  *      Author: TV
  */
 
-#include <compiler.h>
+#include <general_define.h>
 #include <interfaces.h>
 #include <gpio_pub.h>
 
@@ -24,6 +24,7 @@ void environment_init_v(void) {
 }
 void environment_T10_v(void) {
 	inverter_T10_v();
+	net_T10_v();
 }
 void environment_background_v(void){
 	inverter_background_v();

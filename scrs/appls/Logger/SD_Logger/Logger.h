@@ -5,7 +5,7 @@
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __LOGGER_H_
 #define __LOGGER_H_
-#include "compiler.h"
+#include "general_define.h"
 
 #define LOGGER_RAM_SECTOR_SIZE	1024
 typedef enum {

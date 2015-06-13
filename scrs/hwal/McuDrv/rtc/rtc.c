@@ -5,7 +5,7 @@
  *      Author: Phi Thinh
  */
 
-#include <compiler.h>
+#include <general_define.h>
 
 #include <stm32f10x_rtc.h>
 #include <stm32f10x_rcc.h>

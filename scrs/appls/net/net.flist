@@ -6,3 +6,7 @@
 ./net.c
 ./net.h
 ./net_adpts.h
+./inv_com/inv_com.c
+./inv_com/inv_com.h
+./net_reaction/net_reaction.c
+./net_reaction/net_reaction.h

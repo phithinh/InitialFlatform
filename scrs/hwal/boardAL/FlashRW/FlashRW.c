@@ -1,6 +1,6 @@
 
 #include <stm32f10x.h>
-#include <PlatFormType.h>
+#include <general_define.h>
 #include "FlashRW.h"
 #include "MemoryMap.h"
 

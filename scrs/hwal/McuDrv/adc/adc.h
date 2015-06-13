@@ -7,7 +7,7 @@
 
 #ifndef ADC_H_
 #define ADC_H_
-#include <compiler.h>
+#include <general_define.h>
 
 #define _HW_ADC_REGULAR_FEATURE
 

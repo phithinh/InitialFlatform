@@ -1,5 +1,5 @@
 #include "stm32f10x.h"
-#include "PlatFormType.h"
+#include <general_define.h>
 #define _SVPWM_M
 #include "SVPWM.h"
 

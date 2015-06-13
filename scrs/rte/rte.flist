@@ -3,6 +3,3 @@
 
 ./interfaces/interfaces.c
 ./interfaces/interfaces.h
-
-./scheduler/stm32f10x_it.c
-./scheduler/stm32f10x_it.h

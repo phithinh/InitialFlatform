@@ -8,10 +8,9 @@
 ./FlashRW/FlashRW.h    ::::::::
 ./FlashRW/MemoryMap.h  ::::::::
 
-;./serial_com/receiver/receiver.c	
 ./serial_com/RS485/RS485.c	
 ./serial_com/RS485/RS485.h
-;./serial_com/transporter/transporter.c
-;./serial_com/transporter/transporter.h
 ./serial_com/serial_cbk.h
+./serial_com/serial_com_adapt.h
+./serial_com/serial_com.c
 ./serial_com/serial_com.h

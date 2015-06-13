@@ -9,9 +9,9 @@
 #define INVERTER_CONTROLLER_PRI_H_
 
 #ifdef _IV_CTR_M_
-#define EXTERN	extern
-#else
 #define EXTERN
+#else
+#define EXTERN extern
 #endif
 //////////////////////////////////////////////////////////////////////////
 EXTERN uint16 u16AvgCurrent;
@@ -37,8 +37,6 @@ EXTERN signed short l_inverter_ctr_time_stamp;
 EXTERN signed short l_inverter_ctr_sample_time_stamp;
 EXTERN signed short l_inverter_ctr_mil_time_stamp;
 
-EXTERN unsigned short l_inverter_ctr_tx_com_timer;
-
 EXTERN unsigned char l_inverter_ctr_high_vol_cap_sta_b;
 EXTERN unsigned char l_inverter_ctr_sm_doneflag_b;
 EXTERN unsigned char l_inverter_ctr_calib_doneflag_b;
@@ -62,16 +60,16 @@ EXTERN enum {
 } inverter_controller_sta;
 EXTERN unsigned char inverter_controller_pre_sta;
 
-void inverter_ctr_preinit_entry_v(void);
-void inverter_ctr_init_entry_v(void);
-void inverter_ctr_soft_start_entry_v(void);
-void inverter_ctr_vol_calib_entry_v(void);
-void inverter_ctr_i_calib_entry_v(void);
-void inverter_ctr_running_v(void);
-void inverter_ctr_soft_stopping_v(void);
-void inverter_ctr_vol_calib_exit_v(void);
-void inverter_ctr_i_calib_exit_v(void);
-void inverter_ctr_fls_write_v(void);
+void inverter_ctr_preinit_entry_v(void)       ;
+void inverter_ctr_init_entry_v(void)          ;
+void inverter_ctr_soft_start_entry_v(void)    ;
+void inverter_ctr_vol_calib_entry_v(void)     ;
+void inverter_ctr_i_calib_entry_v(void)       ;
+void inverter_ctr_running_entry_v(void)       ;
+void inverter_ctr_soft_stopping_entry_v(void) ;
+void inverter_ctr_vol_calib_exit_v(void)      ;
+void inverter_ctr_i_calib_exit_v(void)        ;
+void inverter_ctr_fls_write_entry_v(void)     ;
 
 void inverter_controller_mon_v(void);
 uint16 AverageCurrent(uint16 Value, uint16 Smooth);

@@ -12,6 +12,3 @@
 ./inverter_adpts.h                       ::::::::
 ./inverter_main.c                       ::::::::
 ./inverter_main.h                       ::::::::
-
-./inv_com/inv_com.c                      ::::::::
-./inv_com/inv_com.h                      ::::::::

@@ -13,7 +13,7 @@
 
 #include "Logger.h"
 #include <ff.h>
-#include <compiler.h>
+#include <general_define.h>
 
 UWORD t_WrittenSDErrCnt_uw = 0;
 char Log_RamBuffer[LOGGER_RAM_SECTOR_SIZE * LOGGER_NUM_RAM_SECTOR];

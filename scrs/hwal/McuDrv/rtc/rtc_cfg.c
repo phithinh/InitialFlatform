@@ -6,7 +6,7 @@
  */
 
 
-#include <compiler.h>
+#include <general_define.h>
 #include <DataCollection_time.h>
 #include "rtc.h"
 

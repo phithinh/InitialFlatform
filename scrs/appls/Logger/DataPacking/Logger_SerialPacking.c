@@ -12,7 +12,7 @@
  *  Created on: Nov 1, 2014
  *      Author: Phi Thinh
  */
-#include <compiler.h>
+#include <general_define.h>
 #include "../Logger_adapts.h"
 #include "../SD_Logger/Logger.h"
 

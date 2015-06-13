@@ -55,5 +55,6 @@ typedef enum
 
 void USART_init_v(void);
 void USART_COMInit_v(COM_TypeDef COM, USART_InitTypeDef* USART_InitStruct);
+unsigned char USART_drv_send_ub(unsigned char p_ch_ub);
 #endif
 

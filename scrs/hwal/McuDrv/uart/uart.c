@@ -1,5 +1,5 @@
 
-#include <compiler.h>
+#include <general_define.h>
 #include <stm32f10x.h>
 #include <stm32f10x_usart.h>
 #include <misc.h>
@@ -94,4 +94,12 @@ void USART_init_v(void)
 	USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
 	USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
 	USART_COMInit_v(COM_SELECT_ID, &USART_InitStructure);
+}
+unsigned char USART_drv_send_ub(unsigned char p_ch_ub){
+	if (USART_GetFlagStatus(COM_SELECT_BASE, USART_FLAG_TC ) == SET){
+		USART_SendData(COM_SELECT_BASE, (uint8_t) p_ch_ub);
+		return TRUE;
+	} else {
+		return FALSE;
+	}
 }

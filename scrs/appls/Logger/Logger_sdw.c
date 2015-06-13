@@ -10,7 +10,7 @@
  *  	- Interval Reaching, the data will be put to SD controller buffer (this is implemented in module _lib/Logger.c
  *  	- The SD controller buffer reach the number which larger than 50% total size of the buffer, the SD writing will be proceed
  */
-#include <compiler.h>
+#include <general_define.h>
 #include <ff.h>
 #include "SD_Logger/Logger.h"
 

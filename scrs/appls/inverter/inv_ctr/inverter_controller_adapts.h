@@ -9,6 +9,7 @@
 #define INVERTER_CONTROLLER_ADAPTS_H_
 
 #include <gpio_pub.h>
+#include "../inverter_adpts.h"
 
 #define LED1_ON    digital_out_set_v(LED1,1)
 #define LED1_OFF   digital_out_set_v(LED1,0)
@@ -33,5 +34,9 @@
 
 #define SD_OFF     digital_out_set_v(IGBT_SD_OUT,1)
 #define SD_ON      digital_out_set_v(IGBT_SD_OUT,0)
+
+
+#define l_inverter_ctr_stop_requested_b			0
+#define l_inverter_ctr_start_requested_b		0
 
 #endif /* INVERTER_CONTROLLER_ADAPTS_H_ */

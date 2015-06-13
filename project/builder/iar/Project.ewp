@@ -624,7 +624,7 @@
       <name>BUILDACTION</name>
       <archiveVersion>1</archiveVersion>
       <data>
-        <prebuild></prebuild>
+        <prebuild>$PROJ_DIR$\..\init.bat</prebuild>
         <postbuild></postbuild>
       </data>
     </settings>
@@ -950,15 +950,6 @@
     <group>
       <name>inverter</name>
       <group>
-        <name>inv_com</name>
-        <file>
-          <name>$PROJ_DIR$\..\..\..\scrs\appls\inverter\inv_com\inv_com.c</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\..\..\scrs\appls\inverter\inv_com\inv_com.h</name>
-        </file>
-      </group>
-      <group>
         <name>inv_ctr</name>
         <file>
           <name>$PROJ_DIR$\..\..\..\scrs\appls\inverter\inv_ctr\inverter_controller.c</name>
@@ -988,6 +979,24 @@
     </group>
     <group>
       <name>net</name>
+      <group>
+        <name>inv_com</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\appls\net\inv_com\inv_com.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\appls\net\inv_com\inv_com.h</name>
+        </file>
+      </group>
+      <group>
+        <name>net_reaction</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\appls\net\net_reaction\net_reaction.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\appls\net\net_reaction\net_reaction.h</name>
+        </file>
+      </group>
       <file>
         <name>$PROJ_DIR$\..\..\..\scrs\appls\net\net.c</name>
       </file>
@@ -1036,7 +1045,13 @@
           <name>$PROJ_DIR$\..\..\..\scrs\hwal\boardAL\serial_com\serial_cbk.h</name>
         </file>
         <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\boardAL\serial_com\serial_com.c</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\..\..\scrs\hwal\boardAL\serial_com\serial_com.h</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\boardAL\serial_com\serial_com_adapt.h</name>
         </file>
       </group>
       <group>
@@ -1052,7 +1067,7 @@
     <group>
       <name>Common</name>
       <file>
-        <name>$PROJ_DIR$\..\..\..\scrs\hwal\Common\compiler.h</name>
+        <name>$PROJ_DIR$\..\..\..\scrs\hwal\Common\general_define.h</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\..\..\scrs\hwal\Common\general_define.h</name>
@@ -1112,6 +1127,12 @@
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\..\scrs\hwal\McuDrv\startup\startup_stm32f10x_md_frertos_iar.s</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\McuDrv\startup\stm32f10x_it.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\scrs\hwal\McuDrv\startup\stm32f10x_it.h</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\..\scrs\hwal\McuDrv\startup\system_stm32f10x.c</name>
@@ -1381,12 +1402,6 @@
     </group>
     <group>
       <name>scheduler</name>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\scrs\rte\scheduler\stm32f10x_it.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\scrs\rte\scheduler\stm32f10x_it.h</name>
-      </file>
     </group>
   </group>
 </project>

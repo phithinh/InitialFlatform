@@ -9,7 +9,7 @@
 #define SERIAL_CBK_H_
 
 
-void serial_RX_IRQHandler(UBYTE p_data_ub);
+void serial_com_isrq_hanlder(unsigned char p_data_ub);
 
 
 #endif /* SERIAL_CBK_H_ */

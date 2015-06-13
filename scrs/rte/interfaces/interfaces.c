@@ -4,8 +4,8 @@
  *  Created on: Apr 19, 2014
  *      Author: TV
  */
-#include <compiler.h>
-#include "interfaces.h"
+#include <general_define.h>
 
-NET_TX_DATA_REQUEST_TDEF net_tx_data_request_st;
-NET_TX_CTR_REQUEST_TDEF net_tx_ctr_request_st;
+#define __INTERFACES_
+#include "interfaces.h"
+#undef __INTERFACES_

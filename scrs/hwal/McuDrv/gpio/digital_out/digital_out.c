@@ -4,7 +4,7 @@
  *  Created on: Mar 8, 2014
  *      Author: TV
  */
-#include <compiler.h>
+#include <general_define.h>
 #include <stm32f10x_gpio.h>
 #include <stm32f10x_rcc.h>
 

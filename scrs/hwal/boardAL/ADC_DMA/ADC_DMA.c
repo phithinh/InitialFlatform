@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 #include "stm32f10x.h"
-#include "PlatFormType.h"
+#include <general_define.h>
 
 #ifndef ___ADCDMA_C
 #define ___ADCDMA_C
